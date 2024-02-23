@@ -7,7 +7,7 @@ const socketRoutes = require('./sockets/routes');
 // const { globalLimiter } = require('./middlewares/rateLimiter.middleware');
 const app = express();
 
-app.use(cors);
+app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(express.json({ limit: 10 }));

@@ -1,93 +1,110 @@
-# Backend
+# OneWork
+## _A Web App to streamline recruitment processes_
+
+# About the Project
+
+OneWork was a project made by [Alberto] and [Luis] and deployed in a homemade environment, in order to add precision and agility to their hiring process work and that of their friends and above all to practice. Nonprofit.
+
+Version control was managed with Git, and project management was done with GitLab.
+
+The homemade server was programmed to save power by automatically shutting down each night. This was achieved through a Ubuntu Server configuration and settings in the BIOS.
+
+It's highly likely that the no-ip URLs for the pre-production and production environments are no longer related to this project or do not exist.
+
+[Alberto]: <https://github.com/Elminsterio>
+[Luis]: <https://github.com/caballeroluis>
+
+## Features
+
+With this tool, users will be able to:
+
+- Create an account as a recruiter or worker.
+- Post job Offers.
+- View the Offers on a fully public Kanban board.
+
+_Additionally, there was a plan to create a video call system using WebRTC for conducting interviews, but it was never implemented._
 
 
+## Tech (Server software)
 
-## Getting started
+Developed with these technologies:
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+- [Node.js] - An open-source, cross-platform JavaScript runtime environment.
+- [Express] - Fast, unopinionated, minimalist web framework for Node.js.
+- [Socket.IO] - Bidirectional and low-latency communication for every platform.
+- [MongoDB] - Open source, document-oriented, NoSQL database system.
+- [Angular] - Web development framework.
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+[Node.js]: <https://nodejs.org>
+[Express]: <https://expressjs.com>
+[Socket.IO]: <https://socket.io>
+[MongoDB]: <https://www.mongodb.com>
+[Angular]: <https://angular.io>
 
-## Add your files
+Deployed on these technologies:
 
-- [ ] [Create](https://gitlab.com/-/experiment/new_project_readme_content:517be2feabf66f43b83059149341a9d3?https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://gitlab.com/-/experiment/new_project_readme_content:517be2feabf66f43b83059149341a9d3?https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://gitlab.com/-/experiment/new_project_readme_content:517be2feabf66f43b83059149341a9d3?https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+- [NGINX] - High performance lightweight web server and reverse proxy server.
+- [Ubuntu] - Reliable Linux distribution for servers.
+- [PM2] - Advanced, production process manager for Node.JS.
 
-```
-cd existing_repo
-git remote add origin https://gitlab.com/onework/backend.git
-git branch -M main
-git push -uf origin main
-```
+[NGINX]: <https://nginx.org>
+[Ubuntu]: <https://ubuntu.com/download/server>
+[PM2]: <https://pm2.keymetrics.io>
 
-## Integrate with your tools
+## Tech (Server ardware)
 
-- [ ] [Set up project integrations](https://gitlab.com/-/experiment/new_project_readme_content:517be2feabf66f43b83059149341a9d3?https://gitlab.com/onework/backend/-/settings/integrations)
+<div align="left">
 
-## Collaborate with your team
+| - Processor: AMD Ryzen 5 1600 Stepping AF 3.6GHz<br>- Storage: WD Green 3D SSD 120GB SATA3<br>- Memory (x2): Corsair Value Select DDR4 2133 PC4-17000 8GB CL15<br>- Motherboard: MSI A320M-A PRO<br>- Graphics: Zotac GeForce GT710 1GB GDDR3<br>- Case: Tacens Anima AC016 USB 3.0<br>- Extra fan: Tacens Aura II 80x80<br>- PSU: Corsair VS450 450W 80 Plus<br>- Tools: Crimper<br>- Tools: UTP CAT6 cable<br>- Tools: UTP Cat.6 RJ45 connector | <img height="250px" alt="Screenshot 2023-06-08 at 11 27 17" src="https://github.com/caballeroluis/OneWork_Front-end/assets/111797757/fcbaefe0-3a60-4960-857d-cc4398d87016"> |
+| --- | --- |
 
-- [ ] [Invite team members and collaborators](https://gitlab.com/-/experiment/new_project_readme_content:517be2feabf66f43b83059149341a9d3?https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://gitlab.com/-/experiment/new_project_readme_content:517be2feabf66f43b83059149341a9d3?https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://gitlab.com/-/experiment/new_project_readme_content:517be2feabf66f43b83059149341a9d3?https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://gitlab.com/-/experiment/new_project_readme_content:517be2feabf66f43b83059149341a9d3?https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Automatically merge when pipeline succeeds](https://gitlab.com/-/experiment/new_project_readme_content:517be2feabf66f43b83059149341a9d3?https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+</div>
 
-## Test and Deploy
+# User interface demo
 
-Use the built-in continuous integration in GitLab.
+## Login
 
-- [ ] [Get started with GitLab CI/CD](https://gitlab.com/-/experiment/new_project_readme_content:517be2feabf66f43b83059149341a9d3?https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://gitlab.com/-/experiment/new_project_readme_content:517be2feabf66f43b83059149341a9d3?https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://gitlab.com/-/experiment/new_project_readme_content:517be2feabf66f43b83059149341a9d3?https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://gitlab.com/-/experiment/new_project_readme_content:517be2feabf66f43b83059149341a9d3?https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://gitlab.com/-/experiment/new_project_readme_content:517be2feabf66f43b83059149341a9d3?https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+![Login](https://github.com/caballeroluis/OneWork_Front-end/blob/main/src/assets/images/demo-screenshots/1-Login.gif?raw=true)
 
-***
+## Edit an Offer
 
-# Editing this README
+![Edit an Offer](https://github.com/caballeroluis/OneWork_Front-end/blob/main/src/assets/images/demo-screenshots/2-Edit-an-Offer.gif?raw=true)
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!).  Thank you to [makeareadme.com](https://gitlab.com/-/experiment/new_project_readme_content:517be2feabf66f43b83059149341a9d3?https://www.makeareadme.com/) for this template.
+## User Verification to modify the behavior and appearance of User Offers
 
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
 
-## Name
-Choose a self-explaining name for your project.
+![User verification](https://github.com/caballeroluis/OneWork_Front-end/blob/main/src/assets/images/demo-screenshots/3-Verifying-user-without-sockets-part.gif?raw=true)
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+## Drag and drop an Offer on the Kanban board
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+![Drag and drop](https://github.com/caballeroluis/OneWork_Front-end/blob/main/src/assets/images/demo-screenshots/4-Drag-and-drop-an-Offer.gif?raw=true)
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+## Displaying the JWT Token and State Management Tools created with RxJS
 
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+![jwt token](https://github.com/caballeroluis/OneWork_Front-end/blob/main/src/assets/images/demo-screenshots/5-Showing-jwt-in-a-custom-state-management.gif?raw=true)
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+## Showing the Let's Encrypt certificate that was used to secure browsing
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+![Let's Encrypt certificate](https://github.com/caballeroluis/OneWork_Front-end/blob/main/src/assets/images/demo-screenshots/6-Let's-Encrypt-certificate.gif?raw=true)
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+# Installation (Back-end)
 
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
+## Dependencies
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
+Run `npm install` for get dependencies.
 
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+## Development server
 
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+Run `npm start` for a dev server.
+
+# Installation (Front-end)
+
+For more help on the User Interface of this project, see the [OneWork_Front-end repository](https://github.com/Elminsterio/OneWork_Front-end) which can be found at [Alberto's account](https://github.com/Elminsterio?tab=repositories)
+
+or
+
+For more help on the User Interface of this project, see the [OneWork_Front-end repository](https://github.com/caballeroluis/OneWork_Front-end) which can be found at [Luis's account](https://github.com/caballeroluis?tab=repositories).
 
 ## License
-For open source projects, say how it is licensed.
 
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
-
+MIT
